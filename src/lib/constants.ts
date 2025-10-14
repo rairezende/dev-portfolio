@@ -13,6 +13,8 @@ export const LINKS = {
   substack: 'https://7andar.substack.com/',
   cva: 'https://www.figma.com/community/plugin/1263631854497422865/cva-component-variants-automator',
   figmaSdk: 'https://github.com/figma-plugin-sdk/design-system',
+  adobeStock: 'https://stock.adobe.com/br/contributor/212716565/Raiane%20Rezende',
+  
 }
 
 // Global
