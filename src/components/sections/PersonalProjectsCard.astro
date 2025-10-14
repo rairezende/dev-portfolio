@@ -1,0 +1,28 @@
+---
+import Card from '../Card.astro'
+import { LINKS } from '../../lib/constants'
+---
+
+<Card
+  colSpan="md:col-span-1"
+  rowSpan="md:row-span-2"
+  title="Personal Projects"
+  href='/personal-projects'
+>
+  <div class="flex h-full w-full flex-col">
+    <div>
+      <img
+        width="50"
+        height="50"
+        src="/museum.gif"
+        class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
+        alt="rai at the museum"
+      />
+    </div>
+    <div>
+      <p class="mt-2 text-sm text-muted-foreground">
+        As a curious human, these are other things I enjoy dedicating myself to.
+      </p>
+    </div>
+  </div>
+</Card>

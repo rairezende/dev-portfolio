@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import TopLayout from '../layouts/TopLayout.astro'
+import Card from '../components/Card.astro'
+import { LINKS } from '../lib/constants'
+---
+
+<BaseLayout
+  title="Personal Projects"
+  description="Hobbies"
+>
+  <main class="flex min-h-[80vh] flex-auto flex-col" transition:animate="slide">
+    <TopLayout>
+      <h2
+        class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
+      >
+        Personal Projects and Hobbies
+      </h2>
+      
+    </TopLayout>
+    <div class="w-full px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+      <Card
+        colSpan="md:col-span-1"
+        rowSpan="md:row-span-2"
+        title="7° andar"
+        href={LINKS.substack}
+        >
+        <div class="flex h-full w-full flex-col">
+          <div>
+            <img
+              src="/7andar.png"
+              class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
+              alt="memoji of andres with a tattoo on his arm"
+            />
+          </div>
+          <div>
+            <p class="mt-2 text-sm text-muted-foreground">
+                I produce the podcast 7° andar from script to recording to editing, everything!
+                It is my personal passion where I talk about movies that represent different aspects of our humanity.
+                It is currently available in portuguese, but I hope I can launch the version in english soon.
+            </p>
+          </div>
+        </div>
+      </Card>
+      
+      
+      <Card
+        colSpan="md:col-span-1"
+        rowSpan="md:row-span-2"
+        title="Photography"
+        href={LINKS.adobeStock}
+      >
+        <div class="flex h-full w-full flex-col">
+          <div>
+            <img
+              width="50"
+              height="50"
+              src="/photography.jpg"
+              class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
+              alt="memoji of andres with a tattoo on his arm"
+            />
+          </div>
+          <div>
+            <p class="mt-2 text-sm text-muted-foreground">
+                Photographing nature, animals, people and even texture, is a hobby I carry whenever it is possible.
+                There is magic in registering life and editing it to depict it closer to what our eyes see.
+            </p>
+          </div>
+        </div>
+      
+      </Card>
+
+      <Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="Painting">
+        <div class="flex h-full w-full flex-col">
+          <div>
+            <img
+              width="50"
+              height="50"
+              src="/logo-sdk.png"
+              class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
+              alt="memoji of andres with a tattoo on his arm"
+            />
+          </div>
+          <div>
+            <p class="mt-2 text-sm text-muted-foreground">
+                To paint using different mediums is a way of freeing the mind and inviting creativity and peace,
+                while working on my hability to focus for various periods of time.
+            </p>
+          </div>
+        </div>
+        
+      </Card>
+
+      <Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="Gardening">
+        <div class="flex h-full w-full flex-col">
+          <div>
+            <img
+              width="50"
+              height="50"
+              src="/logo-sdk.png"
+              class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
+              alt="memoji of andres with a tattoo on his arm"
+            />
+          </div>
+          <div>
+            <p class="mt-2 text-sm text-muted-foreground">
+                There is something beautiful about growing a plant from it's seed, caring for it daily, but also learning how to
+                let it be without too much tending. It's exciting to witness the first flower after months of caring or to observe how
+                long and healthy a leafy plant has become.
+            </p>
+          </div>
+        </div>
+        
+      </Card>
+    </div>
+  </div>
+</div>
+    </main>
+</BaseLayout>
