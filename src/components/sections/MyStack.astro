@@ -2,13 +2,18 @@
 import Card from '../Card.astro'
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-6" title="My Stack">
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-6">
+    <header class="flex items-center">
+      <h1 class="text-xl font-bold text-foreground text-special">
+        My Stack
+      </h1>
+    </header>
   <div class="flex flex-col gap-2">
     <p class="text-sm font-light">
       These are some tools and technologies I have experience with:    
       <br />
       <br />
-      <ul class="list-inside list-disc">
+      <ul class="list-inside list-disc custom-bullets">
             <li>TypeScript</li>
             <li>JavaScript</li>
             <li>Node.js</li>

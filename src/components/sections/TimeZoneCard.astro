@@ -3,6 +3,11 @@ import Card from '../Card.astro'
 import TimeZoneV2 from './TimeZoneCardV2'
 ---
 
-<Card colSpan="lg:col-span-2" rowSpan="md:row-span-2" title="Time zone">
+<Card colSpan="lg:col-span-2" rowSpan="md:row-span-2">
+  <header class="flex items-center">
+      <h1 class="text-xl font-bold text-foreground text-special">
+        Time Zone
+      </h1>
+    </header>
   <TimeZoneV2 timezone="America/Sao_Paulo" client:load />
 </Card>

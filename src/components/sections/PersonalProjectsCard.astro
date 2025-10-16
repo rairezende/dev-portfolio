@@ -1,14 +1,17 @@
 ---
 import Card from '../Card.astro'
-import { LINKS } from '../../lib/constants'
 ---
 
 <Card
   colSpan="md:col-span-1"
   rowSpan="md:row-span-2"
-  title="Personal Projects"
   href='/personal-projects'
 >
+    <header class="flex items-center">
+      <h1 class="text-xl font-bold text-foreground text-special">
+        Personal Projects
+      </h1>
+    </header>
   <div class="flex h-full w-full flex-col">
     <div>
       <img
