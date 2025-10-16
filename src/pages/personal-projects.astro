@@ -12,7 +12,7 @@ import { LINKS } from '../lib/constants'
   <main class="flex min-h-[80vh] flex-auto flex-col" transition:animate="slide">
     <TopLayout>
       <h2
-        class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
+        class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-special"
       >
         Personal Projects and Hobbies
       </h2>
@@ -28,9 +28,13 @@ import { LINKS } from '../lib/constants'
       <Card
         colSpan="md:col-span-1"
         rowSpan="md:row-span-1"
-        title="7° andar"
         href={LINKS.substack}
         >
+        <header class="flex items-center">
+          <h1 class="text-xl font-bold text-foreground text-special">
+            7°andar
+          </h1>
+        </header>
         <div class="flex h-full w-full flex-col">
           <div>
             <img
@@ -52,9 +56,13 @@ import { LINKS } from '../lib/constants'
       <Card
         colSpan="md:col-span-1"
         rowSpan="md:row-span-1"
-        title="Photography"
         href={LINKS.adobeStock}
       >
+      <header class="flex items-center">
+      <h1 class="text-xl font-bold text-foreground text-special">
+        Photography
+      </h1>
+      </header>
         <div class="flex h-full w-full flex-col">
           <div>
             <img
@@ -75,7 +83,12 @@ import { LINKS } from '../lib/constants'
       
       </Card>
 
-      <Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="Painting">
+      <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
+        <header class="flex items-center">
+        <h1 class="text-xl font-bold text-foreground text-special">
+          Painting
+        </h1>
+        </header>
         <div class="flex h-full w-full flex-col">
           <div>
             <img
@@ -96,7 +109,12 @@ import { LINKS } from '../lib/constants'
         
       </Card>
 
-      <Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="Gardening">
+      <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
+        <header class="flex items-center">
+          <h1 class="text-xl font-bold text-foreground text-special">
+            Gardening
+          </h1>
+        </header>
         <div class="flex h-full w-full flex-col">
           <div>
             <img
