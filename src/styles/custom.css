@@ -1,0 +1,21 @@
+.custom-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.custom-bullets li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+}
+
+.custom-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(45deg, #AE518E, #51AE71);
+  border-radius: 50%;
+}
