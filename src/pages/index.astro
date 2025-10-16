@@ -7,10 +7,11 @@ import Card from '../components/Card.astro'
 import TimeZoneCard from '../components/sections/TimeZoneCard.astro'
 import SoftSkillsCard from '../components/sections/SoftSkillsCard.astro'
 import Now from '../components/sections/Now.astro'
-import CVCard from '../components/sections/CVCard.astro'
+import ResumeCard from '../components/sections/ResumeCard.astro'
 import ExperienceCard from '../components/sections/ExperienceCard.astro'
 import PersonalProjectsCard from '../components/sections/PersonalProjectsCard.astro'
-import StudyCard from '../components/sections/StudyCard.astro'
+import EducationCard from '../components/sections/EducationCard.astro'
+import PreviousProjectsCard from '../components/sections/PreviousProjects.astro'
 //
 // import { motion, AnimatePresence } from 'framer-motion'
 ---
@@ -52,14 +53,9 @@ import StudyCard from '../components/sections/StudyCard.astro'
   >
     <IntroCard />
     <MyStack />
-    <CVCard />
+    <ResumeCard />
     <Now />
-    <Card
-      colSpan="md:col-span-1"
-      rowSpan="md:row-span-2"
-      title="Projects"
-      href="/portfolio"
-    />
+    <PreviousProjectsCard />
     <TimeZoneCard />
     <SoftSkillsCard />
     <ExperienceCard />
@@ -68,11 +64,11 @@ import StudyCard from '../components/sections/StudyCard.astro'
         <blockquote class="mt-6 border-l-2 pl-6 italic">
           “Fear is the original sin.”
         </blockquote>
-        <p class="mt-2 text-xs">- The Blue Castle</p>
+        <p class="mt-2 text-xs text-tertiary">- The Blue Castle</p>
       </div>
     </Card>
     <PersonalProjectsCard />
-    <StudyCard />
+    <EducationCard />
     <!-- <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
       <p class="text-xs">
         © 2023 · Crafted with ♥️ using <a
