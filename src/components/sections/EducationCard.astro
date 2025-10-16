@@ -1,0 +1,22 @@
+---
+import Card from '../Card.astro'
+import { Badge } from '../ui/badge'
+import { STUDIES } from '../../lib/constants'
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
+    <header class="flex items-center">
+      <h1 class="text-xl font-bold text-foreground text-special">
+        Education
+      </h1>
+    </header>
+  <div class="mt-2 flex w-full flex-wrap items-center justify-center gap-2">
+    {
+      STUDIES.map((study) => (
+        <a href={study.link} target="__blank">
+          <Badge variant="outline">{study.institution}</Badge>
+        </a>
+      ))
+    }
+  </div>
+</Card>
