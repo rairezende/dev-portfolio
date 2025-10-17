@@ -25,18 +25,6 @@ export const SITE: Site = {
   AUTHOR: 'Mark Horn',
 }
 
-// Work Page
-export const WORK: Page = {
-  TITLE: 'Work',
-  DESCRIPTION: 'Places I have worked.',
-}
-
-// Blog Page
-// export const BLOG: Page = {
-//   TITLE: 'Blog',
-//   DESCRIPTION: 'Writing on topics I am passionate about.',
-// }
-
 // Projects Page
 export const PROJECTS: Page = {
   TITLE: 'Projects',
@@ -49,10 +37,10 @@ export const SEARCH: Page = {
   DESCRIPTION: 'Search all posts and projects by keyword.',
 }
 
-// Study Page
-export const STUDIES = [
+// Education Page
+export const EDUCATION = [
   {
-    title: 'Journalism',
+    title: 'Journalism B.A.',
     institution: 'Universidade Federal de Ouro Preto',
     link: 'https://ufop.br/',
     date: '2016 - 2021',
