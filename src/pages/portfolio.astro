@@ -51,7 +51,7 @@ const entries = await contentfulClient.getEntries<Project>({})
         <div class="flex h-full w-full flex-col">
           <div>
             <img
-              src="/CVA.png"
+              src="/logo-cva.png"
               class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
               alt="CVA logo followed by slogan 'your time is sacred'"
             />
@@ -98,8 +98,31 @@ const entries = await contentfulClient.getEntries<Project>({})
       </Card>
 
       <!-- Add more cards here -->
-      <Card colSpan="md:col-span-1" rowSpan="md:row-span-1" title="Another Card">
-        <!-- Card content -->
+      <Card colSpan="md:col-span-1" rowSpan="md:row-span-1" href= {LINKS.cheery}>
+        <header class="flex items-center">
+          <h1 class="text-xl font-bold text-foreground text-secondary">
+            Cheery
+          </h1>
+        </header>
+          <div class="flex h-full w-full flex-col">
+          <div>
+            <img
+              width="50"
+              height="50"
+              src="/logo-cheery.png"
+              class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
+              alt="Cheery logo is the word cheery in purple surrounded by small green
+              squares like github's commits."
+            />
+          </div>
+          <div>
+            <p class="mt-2 text-sm text-muted-foreground">
+              Cheery is a mascot that cheers you on while you code. Who has never felt
+              a bit unmotivated when debuging something or just in need of some cheerleading
+              when creating something new? (Cheery is currently being built).
+            </p>
+          </div>
+        </div>
       </Card>
     </div>
   </div>
