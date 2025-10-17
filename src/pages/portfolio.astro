@@ -1,5 +1,4 @@
 ---
-import { WORK } from '../lib/constants'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import TopLayout from '../layouts/TopLayout.astro'
 import BottomLayout from '../layouts/BottomLayout.astro'
@@ -31,7 +30,7 @@ const entries = await contentfulClient.getEntries<Project>({})
   <main class="flex min-h-[80vh] flex-auto flex-col" transition:animate="slide">
     <TopLayout>
       <h2
-        class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
+        class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-special"
       >
         Projects
       </h2>
@@ -42,15 +41,19 @@ const entries = await contentfulClient.getEntries<Project>({})
       <Card
         colSpan="md:col-span-1"
         rowSpan="md:row-span-2"
-        title="CVA - Component Variants Automator"
         href={LINKS.cva}
         >
+        <header class="flex items-center">
+          <h1 class="text-xl font-bold text-foreground text-secondary">
+            CVA - Component Variants Automator
+          </h1>
+        </header>
         <div class="flex h-full w-full flex-col">
           <div>
             <img
               src="/CVA.png"
               class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
-              alt="memoji of andres with a tattoo on his arm"
+              alt="CVA logo followed by slogan 'your time is sacred'"
             />
           </div>
           <div>
@@ -67,9 +70,13 @@ const entries = await contentfulClient.getEntries<Project>({})
       <Card
         colSpan="md:col-span-1"
         rowSpan="md:row-span-2"
-        title="Figma SDK"
         href={LINKS.figmaSdk}
       >
+        <header class="flex items-center">
+          <h1 class="text-xl font-bold text-foreground text-secondary">
+            Figma SDK
+          </h1>
+        </header>
         <div class="flex h-full w-full flex-col">
           <div>
             <img
@@ -77,7 +84,7 @@ const entries = await contentfulClient.getEntries<Project>({})
               height="50"
               src="/logo-sdk.png"
               class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
-              alt="memoji of andres with a tattoo on his arm"
+              alt="Figma SDK logo is the text on a black background"
             />
           </div>
           <div>
