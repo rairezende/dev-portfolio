@@ -2,7 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import TopLayout from '../layouts/TopLayout.astro'
 import BottomLayout from '../layouts/BottomLayout.astro'
-import ProjectCard from '../components/ProjectCard.astro'
 import Card from '../components/Card.astro'
 import { LINKS } from '../lib/constants'
 ---
@@ -35,7 +34,7 @@ import { LINKS } from '../lib/constants'
         <div class="flex h-full w-full flex-col">
           <div>
             <img
-              src="/logo-cva.png"
+              src={`${import.meta.env.BASE_URL}logo-cva.png`}
               class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
               alt="CVA logo followed by slogan 'your time is sacred'"
             />
@@ -66,7 +65,7 @@ import { LINKS } from '../lib/constants'
             <img
               width="50"
               height="50"
-              src="/logo-sdk.png"
+              src={`${import.meta.env.BASE_URL}logo-sdk.png`}
               class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
               alt="Figma SDK logo is the text on a black background"
             />
@@ -93,7 +92,7 @@ import { LINKS } from '../lib/constants'
             <img
               width="50"
               height="50"
-              src="/logo-cheery.png"
+              src={`${import.meta.env.BASE_URL}logo-cheery.png`}
               class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
               alt="Cheery logo is the word cheery in purple surrounded by small green
               squares like github's commits."
