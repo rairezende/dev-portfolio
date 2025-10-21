@@ -107,6 +107,29 @@ import { LINKS } from '../lib/constants'
           </div>
         </div>
       </Card>
+      <Card colSpan="md:col-span-1" rowSpan="md:row-span-1" href= {LINKS.celestialInsights}>
+        <header class="flex items-center">
+          <h1 class="text-xl font-bold text-foreground text-secondary">
+            Celestial Insights
+          </h1>
+        </header>
+          <div class="flex h-full w-full flex-col">
+          <div>
+            <img
+              width="50"
+              height="50"
+              src={`${import.meta.env.BASE_URL}/logo-celestial-insights.png`}
+              class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100"
+              alt="The Celestial Insights logo is the word itself in golden yellow upon a dark background."
+            />
+          </div>
+          <div>
+            <p class="mt-2 text-sm text-muted-foreground">
+              Celestial Insights is a tarot reading AI based on a prompted code by Gemini (Celestial Insights is in development).
+            </p>
+          </div>
+        </div>
+      </Card>
     </div>
   </div>
 </div>
