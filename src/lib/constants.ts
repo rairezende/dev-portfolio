@@ -17,7 +17,7 @@ export const LINKS = {
   cheery: 'https://github.com/rairezende/cheery',
   celestialInsights: 'https://github.com/rairezende/Celestial-Insights',
   trove: 'https://github.com/rairezende/Trove',
-  trippleMoon: 'https://github.com/rairezende/tripple-moon',
+  tripleMoon: 'https://github.com/rairezende/triple-moon',
 
   
 }
