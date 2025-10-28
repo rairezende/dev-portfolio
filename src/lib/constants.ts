@@ -15,8 +15,8 @@ export const LINKS = {
   figmaSdk: 'https://github.com/figma-plugin-sdk/design-system',
   adobeStock: 'https://stock.adobe.com/br/contributor/212716565/Raiane%20Rezende',
   cheery: 'https://github.com/rairezende/cheery',
-  celestialInsights: 'https://celestial-insights.netlify.app/',
-  trove: 'https://github.com/rairezende/Trove',
+  celestialInsights: 'https://celestial-insights.rairezende.dev/',
+  trovy: 'https://trovy.rairezende.dev',
   tripleMoon: 'https://github.com/rairezende/triple-moon',
 
   
